@@ -60,9 +60,7 @@ class HROfferLetterRAG:
             )
             travel_chunks = self.text_splitter.split_documents([travel_doc])
             documents.extend(travel_chunks)
-            
-            st.success(f"Created {len(documents)} document chunks from HR policies")
-            
+                        
             self.vector_store = FAISS.from_documents(documents, self.embeddings)
             return True
             
@@ -367,5 +365,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
