@@ -317,12 +317,12 @@ def main():
     if st.session_state.get('system_ready', False):
         
         with st.sidebar:
-            st.header("📋 Available Employees")
+            st.header("Available Employees")
             st.caption(f"From Employee_List.csv ({len(rag_system.employees_df)} total)")
             for _, employee in rag_system.employees_df.iterrows():
                 st.write(f"• **{employee['Employee Name']}** ({employee['Department']}, {employee['Band']})")
         
-        st.header("🎯 Generate Offer Letter")
+        st.header("Generate Offer Letter")
         
         employee_name = st.text_input(
             "Enter Employee Name:", 
@@ -365,6 +365,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
