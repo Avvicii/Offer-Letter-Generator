@@ -1,3 +1,9 @@
+import sys
+import importlib
+import pysqlite3
+sys.modules["sqlite3"] = importlib.import_module("pysqlite3")
+
+
 import streamlit as st
 import pandas as pd
 from datetime import datetime
@@ -317,3 +323,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
