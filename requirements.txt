@@ -1,6 +1,6 @@
 
 pysqlite3-binary
-chromadb
+faiss-cpu
 langchain
 langchain_community
 streamlit
