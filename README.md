@@ -7,7 +7,6 @@ An HR automation tool that generates personalised offer letters using Retrieval-
 - **Smart Salary Breakdown**: Calculates and displays comprehensive compensation structures
 - **Band-Specific Policies**: Applies appropriate leave and travel policies based on employee band (L1-L5)
 - **Department-Specific Rules**: Incorporates team-specific WFO and operational requirements
-- **Streamlit Web UI**: Clean, intuitive interface for generating offer letters
 - **Export Functionality**: Download generated letters as text files
 - **Real-time Generation**: Instant offer letter creation with employee name input
 
